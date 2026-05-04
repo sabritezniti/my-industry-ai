@@ -247,7 +247,7 @@ def init_db():
 # LICENSE GATE  (نظام ترخيص بـ SHA-256 — مثل LicenseGate.dart)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-_VALID_HASH = hashlib.sha256(b'22459127091981_INDUSTRY_AI_LICENSE').hexdigest()
+_VALID_HASH = hashlib.sha256(b'22459129071981_INDUSTRY_AI_LICENSE').hexdigest()
 FREE_TRIALS  = 3
 
 
@@ -297,7 +297,7 @@ def show_license_screen():
                 st.rerun()
 
         st.markdown("---")
-        st.markdown("**🧪 للتجربة:** استخدم المفتاح: `22459127091981`")
+        st.markdown("**🧪 للتجربة:** استخدم المفتاح `")
 
         if trials_left > 0:
             if st.button("🚀 تجربة مجانية (تخطي الترخيص)", use_container_width=True):
